@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Review Classifier</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='./style.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Classify Your Movie Review</h1>
+
+     <!-- Form to enter new data for predictions  -->
+    <form action="{{ url_for('soft_voting_predict')}}"method="POST">
+      <input type="text" name="Enter your review" placeholder="Enter Yor review" required="required" /><br>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict_using_Soft_Voting</button>
+    </form>
+
+    <br>
+    <br>
+    
+    <form action="{{ url_for('hard_voting_predict')}}"method="POST">
+      <input type="text" name="Enter your review" placeholder="Enter Yor review" required="required" /><br>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict_Using_Hard_Voting</button>
+    </form>
+
+   <br>
+   <br>
+  
+   
+ </div>
+ {{pred}}
+
+</body>
+</html>
