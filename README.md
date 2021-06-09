@@ -45,12 +45,13 @@
 <p align="center">
 <img src="images/blending.png" alt="Logo" width="580" height="280">
 
-There are many great Deep Learning models available,here I focussed on creating a light weight blending model using conventional ML algorithms trained on a partiular corpus with comparable metrics.
+There are many great Deep Learning models available,here I focussed on creating a light weight blending model using conventional ML algorithms trained on a partiular corpus achieving competitive roc_auc score.
 
 Here's why:
 * The project does not use high memory Deep Learning Models.
 * The response time is pretty short with comparable performance.
 * The model leverages a naive approach with no emphasis on pre-trained word embeddings.
+* The model optimizes the soft-voting classifier on roc_score.    
 * The model is trained with Logistic Regression,Random Forest and Naive Bayes Classifier tuned by Hyperopt on both Count vectorized And TF-IDF vectorized word representations achieving a low bias and low variance model.
 
 ### Built With
