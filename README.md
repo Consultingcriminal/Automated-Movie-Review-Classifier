@@ -45,7 +45,7 @@
 <p align="center">
 <img src="images/blending.png" alt="Logo" width="580" height="280">
 
-There are many great Deep Learning models available, however,here I focussed on creating a light weight blending model using conventional ML algorithms with comparable metrics.
+There are many great Deep Learning models available,here I focussed on creating a light weight blending model using conventional ML algorithms trained on a partiular corpus with comparable metrics.
 
 Here's why:
 * The project does not use high memory Deep Learning Models.
